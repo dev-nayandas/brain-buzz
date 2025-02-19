@@ -2,6 +2,9 @@
 
 An interactive quiz platform built with **React**, **React Router DOM**, **Tailwind CSS**, and **IndexedDB**. Users can take quizzes with multiple-choice and integer-type questions, receive instant feedback, and review their attempt history.
 
+
+- [Live Link](https://brain-buzz-ebon.vercel.app/)
+- [GitHub Link](https://github.com/dev-nayandas/brain-buzz)
 ---
 
 ## 🚀 Features
@@ -35,7 +38,7 @@ An interactive quiz platform built with **React**, **React Router DOM**, **Tailw
 
 ## 🖥️ Instructions to Run the App Locally
 
-### 1️⃣ Clone the Repository
+### 1️⃣ Clone the Repository then got to the cloned folder then npm install  then npm run dev then in browser [localhost](http://localhost:5173/) the app will run
 ```bash
 git clone https://github.com/dev-nayandas/brain-buzz
 cd brain-buzz
