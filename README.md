@@ -1,9 +1,43 @@
-# React + Vite
+# 📘 Brain Buzz Quiz App
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An interactive quiz platform built with **React**, **React Router DOM**, **Tailwind CSS**, and **IndexedDB**. Users can take quizzes with multiple-choice and integer-type questions, receive instant feedback, and review their attempt history.
 
-Currently, two official plugins are available:
+---
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-"# brain-buzz" 
+## 🚀 Features
+
+✅ **Start Screen with Instructions:**  
+- Clear guidelines before starting the quiz.  
+- "Start Quiz" button to begin.  
+
+✅ **Quiz Functionality:**  
+- **Multiple question types:**  
+  - Multiple-choice questions (MCQ)  
+  - Integer-type questions with integer validation  
+- **Timer-based quizzes:**  
+  - Each question has a 30-second timer  
+  - Automatic progression to the next question when time expires  
+- **Multiple attempts per quiz:**  
+  - Users can retake the quiz to improve scores  
+  - Each attempt is stored separately  
+
+✅ **User Experience Enhancements:**  
+- **Instant feedback** (Correct/Incorrect/Time’s up!) after answering  
+- **Next button** to manually proceed after answering or timer end  
+- **Submit button for integer questions** disables after submission  
+
+✅ **Attempt History & Review:**  
+- **Past attempts** are saved using IndexedDB  
+- **View all attempts** in a list with timestamps and scores  
+- **Click on any attempt** to view detailed question-by-question analysis  
+
+---
+
+## 🖥️ Instructions to Run the App Locally
+
+### 1️⃣ Clone the Repository
+```bash
+git clone https://github.com/dev-nayandas/brain-buzz
+cd brain-buzz
+npm install
+npm run dev
