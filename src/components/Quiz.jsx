@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import Timer from "./Timer";
-import QuestionMCQ from "./QuestionMCQ";
+
 import QuestionInteger from "./QuestionInteger";
+import QuestionMcq from "./QuestionMcq";
 
 const Quiz = ({ questions, onQuizComplete }) => {
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -80,7 +81,7 @@ const Quiz = ({ questions, onQuizComplete }) => {
       <Timer key={currentIndex} timeLimit={30} onTimeout={handleTimeout} />
 
       {currentQuestion.type === "mcq" ? (
-        <QuestionMCQ
+        <QuestionMcq
           questionData={currentQuestion}
           onSelect={(option) => {
             setSelectedOption(option);
